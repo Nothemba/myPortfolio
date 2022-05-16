@@ -1,0 +1,93 @@
+.home{
+    /* display: flex; */
+    background-color: #1ABC9C;
+    height: 650px;
+    color: #F1F4FD;
+    
+
+}
+.hand{
+    color: #112240;
+    font-size: xx-large;
+    margin-left: 14.5%;
+    margin-top: 8%;
+    
+}
+.greeting{
+    margin-top: 8%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FAC60C;
+}
+.name{
+    display: block;
+    justify-items: flex-start;
+    font-size:x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15%;
+    
+   
+}
+.greet{
+display: flex;
+}
+.myName{
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count:initial;
+    transform-origin: 80% 80%;
+    display: inline-block;
+  }
+  .angle{
+      color: #112240;   
+  }
+  .info{
+      display: flex;
+      margin-top: 2%;
+      font-size: large;
+      width: 70%;
+      color: #112240;
+      margin-left: 2%;
+    
+  }
+  .download{
+      background-color: #112240;
+      color: #64FFDA;
+      width: 22rem;
+      height: 7rem;
+      border: 1px solid #64FFDA;
+      font-size: medium;
+      margin-top: 4%;
+      margin-left: 17%;
+
+  }
+  .slash{
+      padding-top: 3%;
+      padding-right: 0%;
+      color: #FAC60C;
+      font-size: 8rem;
+  }
+  /* .digital{
+      color:#FAC60C;
+      width: 50%;
+      display: ;
+  } */
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    15% { transform: rotate(20.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    30% { transform: rotate(-10.0deg) }
+    40% { transform: rotate(20.0deg) }
+    50% { transform: rotate(-8.0deg) }
+    60% { transform: rotate(16.0deg) }
+    70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+   100% { transform: rotate( 0.0deg) }
+  }
