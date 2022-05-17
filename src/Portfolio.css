@@ -9,78 +9,93 @@
 .hand{
     color: #112240;
     font-size: xx-large;
-    margin-left: 14.5%;
-    margin-top: 8%;
+  
+   
     
 }
 .greeting{
-    margin-top: 8%;
-    margin-left: 2%;
-    margin-bottom: 2%;
-  
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2%;
+  margin-bottom: 2%;
+    /* font-family: monospace; */
     color: #FAC60C;
+    font-size: 2rem;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+
 }
 .name{
     display: block;
     justify-items: flex-start;
-    font-size:x-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:2rem;
     margin-left: 15%;
     
-   
+    font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 .greet{
-display: flex;
+    
+    height: 15rem;
+    margin-left: 18%;
+    animation-name: drop; 
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+    margin-bottom: 3%;
 }
-.myName{
-    margin-left: 3%;
-    margin-top: 1%;
+.myname{
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    margin-left: 2%;
     margin-bottom: 2%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    
 
 }
-.hand {
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count:initial;
-    transform-origin: 80% 80%;
-    display: inline-block;
-  }
+
   .angle{
-      color: #112240;   
+      color: #112240;  
+      margin-left: 0px; 
   }
   .info{
       display: flex;
-      margin-top: 2%;
-      font-size: large;
+      margin-top: 3%;
+      font-size: 2rem;
       width: 70%;
       color: #112240;
       margin-left: 2%;
-    
+      padding-left: 2%;   
   }
+  .fadein{
+    opacity: 0;
+    animation-name: description;
+    animation-duration: 2s;
+     animation-delay: 3s; 
+    animation-fill-mode: forwards;
+  }
+@keyframes description {
+    0% {opacity:0}
+    100%{opacity: 1;}
+}
+
   .download{
       background-color: #112240;
       color: #64FFDA;
       width: 22rem;
       height: 7rem;
       border: 1px solid #64FFDA;
-      font-size: medium;
-      margin-top: 4%;
+      font-size: 2rem;
+      margin-top: 4.5%;
       margin-left: 17%;
-
+      font-family: monospace;
+  }
+  .download:hover{
+      color:#FAC60C
   }
   .slash{
-      padding-top: 3%;
+      padding-top: 4%;
       padding-right: 0%;
       color: #FAC60C;
-      font-size: 8rem;
+      font-size: 9rem;
+      margin-right: 0px;
   }
-  /* .digital{
-      color:#FAC60C;
-      width: 50%;
-      display: ;
-  } */
+
   @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
     15% { transform: rotate(20.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
@@ -90,4 +105,40 @@ display: flex;
     60% { transform: rotate(16.0deg) }
     70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
    100% { transform: rotate( 0.0deg) }
+  }
+
+  .typing {
+    width: 100%;
+    animation: typing 2s steps(30), blink .2s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    padding-bottom: 1%;
+    opacity: 0;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    font-size: 5rem;
+  }
+  
+  @keyframes typing {
+      
+        0% {opacity:0}
+        100%{opacity: 1;}
+      
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+  @keyframes drop {
+      0%{top:-25rem}
+      100%{top:12rem}
+      
   }
