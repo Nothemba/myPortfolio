@@ -35,7 +35,7 @@
     height: 15rem;
     margin-left: 18%;
     animation-name: drop; 
-    animation-duration: 3s;
+    animation-duration: 2s;
     position: relative;
     animation-fill-mode: forwards;
     margin-bottom: 3%;
@@ -109,7 +109,7 @@
 
   .typing {
     width: 100%;
-    animation: typing 2s steps(30), blink .2s step-end infinite alternate;
+    animation: typing 2s steps(30), blink .2s step-end;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
@@ -119,11 +119,21 @@
     animation-fill-mode: forwards;
     font-size: 5rem;
   }
-  
+  .aboutHeading{
+     margin-left: 5rem;
+      margin-top: 3rem;
+      color: #1ABC9C;
+      font-family: monospace;
+      font-size: 4rem;
+      padding: 2rem;
+      text-align: center;
+     
+
+  }
   @keyframes typing {
       
-        0% {opacity:0}
-        100%{opacity: 1;}
+        0% {opacity:0 }
+        100%{opacity: 1}
       
     from {
       width: 0
@@ -138,7 +148,7 @@
 
 
   @keyframes drop {
-      0%{top:-25rem}
+      0%{top:-12rem}
       100%{top:12rem}
       
   }

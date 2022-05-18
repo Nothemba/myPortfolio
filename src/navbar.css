@@ -40,6 +40,10 @@ a{
 }
 .nav__brand{
 font-weight: bolder;
+border: 1px dashed  #FAC60C;
+padding: 1rem;
+border-radius: 50%;
+
 }
 .nav__menu{
     display: flex;

@@ -1,0 +1,75 @@
+.p__image{
+    width: 34rem;
+    height: 34rem;
+    
+    margin-left: 10rem;
+    border-radius: 50%;
+    border: 2px solid #112240;
+}
+.logo{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    animation: rotation 2s alternate linear;
+}
+.p__image :hover{
+    background-color: aquamarine;
+}
+.profile__details{
+    position: relative;
+    width: 650px;
+    height: 500px;
+    background: #112240;
+    color: #CCD6F6;
+    padding: 3rem;
+    margin-right: 3rem;
+    border: 2px solid #65e0c1;
+    border-radius: 10px;
+    font-family: 'Inter';
+
+}
+.about__content{
+    margin-top: 6rem;
+    display: flex;
+    gap: 3rem
+}
+.caret{
+    color: #65e0c1;
+    font-size: xx-large;
+}
+.skills{
+    
+}
+.wrapper{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: 200px 200px 200px; 
+    gap: 2rem;
+}
+.drop__shadow{
+    box-shadow: 2px 4px 8px #585858;
+    padding: 3rem;
+    margin: 4rem;
+}
+.descr{
+    margin-top: 3rem;
+    color: #112240;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.skills__headind{
+margin-top: 1rem;
+margin-bottom: 2rem;
+font-size: 1.8rem;
+color: #FAC60C;
+font-family: monospace;
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
