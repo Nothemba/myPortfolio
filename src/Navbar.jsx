@@ -4,12 +4,11 @@ import './navbar.css';
 function Nav() {
   return (
     <nav className="nav ">
-      {/* <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button> */}
+      <a href="#" className="toggle">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </a>
       <a href="#" className="brand nav__brand ml-5" >
         NT
       </a> 

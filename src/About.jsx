@@ -17,7 +17,8 @@ function About() {
         <div className='about__content drop__shadow'>
         <div className="profile__image">  
          <img src={profilePicture} alt="profile image" className='p__image'/>
-         <p className='descr'>University IT graduate with desktop support and 2 years web development experience that strives for excellence in every task with a “can-do” mentality. A technology enthusiast, seeking an opportunity to add value to your company and gain some valuable experience.<br></br>
+         <p className='descr'>University IT graduate with desktop support and 2 years web development experience that strives for excellence in every task with a “can-do” mentality.<br/>
+          A technology enthusiast, seeking an opportunity to add value to your company and gain some valuable experience.<br></br>
 
             Here are the technologies that i have been working with:</p>
         </div>
